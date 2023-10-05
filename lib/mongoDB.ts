@@ -2,8 +2,7 @@ import * as mongoose from "mongoose";
 
 export const connectMongoDB = async () => {
 	try {
-		const url = `%MONGODB_URI%` || '';
-		await mongoose.connect(url);
+		await mongoose.connect("mongodb+srv://flexxu:aWiUwFQ8eMbSWM61@cluster0.gvckipc.mongodb.net/?retryWrites=true&w=majority");
 		console.log("Connected to MongoDB.");
 	} catch (error) {
 		console.error(error);

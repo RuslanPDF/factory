@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  web:
+    image: next
+    container_name: next
+    volumes:
+      - 'next-config:/app'
+    command: npm start
+    ports:
+      - "80:3000"
+    restart: unless-stopped
+volumes:
+  next-config:
+
