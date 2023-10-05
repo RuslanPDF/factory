@@ -11,7 +11,7 @@ export interface IFactoryBody extends IFactoryBodyUpdate {
 	__v: number
 }
 
-const url: string = `${process.env.BACKEND_URL}`
+const url: string = `%BACKEND_URL%`
 
 export const getFactoryById = async (id: number): Promise<IFactoryBody> => {
 	const {data}: AxiosResponse = await axios.get(`${url}/${id}`);
