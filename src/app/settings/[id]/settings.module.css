@@ -1,0 +1,52 @@
+.settings {
+	width: 100%;
+	padding: 40px;
+
+}
+
+.settings_title {
+	color: white;
+}
+
+.settings_container {
+	width: 100%;
+}
+
+.form {
+	max-width: 400px;
+	padding-bottom: 40vh;
+}
+
+.form_container {
+	padding: 30px;
+	border-radius: 10px;
+	color: white;
+	background: linear-gradient(200deg, #4D4D4D, #373737);
+	box-shadow: -4px 4px 10px #00000024;
+}
+
+.labels {
+	color: white;
+}
+
+.btn_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.btn_container button:nth-child(1){
+	margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+	.settings_title {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 768px) {
+	.settings_title {
+		font-size: 32px;
+	}
+}
